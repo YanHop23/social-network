@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import Profile from './components/content/Profile/Profile.jsx';
+import Message from './components/content/Message/Message.jsx';
+import {Route, Routes, Link} from "react-router-dom";
+
+import k from './style/main.module.css';
+import News from './components/content/News/News.jsx';
+import Settings from './components/content/Settings/Settings.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={k.wrapper}>
+      <Header />
+      <Navbar />
+      <div className={k.wrapper__content}>
+        <Routes>
+          <Route path='/' element={<Profile />} />
+          <Route path='/profile' element={<Profile />}/>
+          <Route path='/message' element={<Message />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/settings' element={<Settings />} />
+
+        </Routes>
+      </div>
     </div>
   );
 }
