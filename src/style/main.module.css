@@ -1,15 +1,15 @@
 @import "../style/root.css";
 .wrapper {
     width: 900px;
-    height: 600px;
+    height: 100vh;
     margin: 0 auto 0 auto;
     display: grid;
     grid-template-areas: 
     "h h"
     "n c";
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 165px 1fr;
     grid-template-rows: 70px 1fr;
-    gap: 10px;
+    gap: 8px;
 }
 .wrapper__content {
     grid-area: c;

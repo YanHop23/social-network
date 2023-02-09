@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template: 1fr / 30% 70%;
+}
+.photo {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+}
+.name {
+    font-size: 30px;
+}
