@@ -8,6 +8,8 @@ import k from './style/main.module.css';
 import News from './components/content/News/News.jsx';
 import Settings from './components/content/Settings/Settings.jsx';
 
+
+
 function App(props) {
   return (
     <div className={k.wrapper}>
@@ -17,8 +19,7 @@ function App(props) {
         <Routes>
           <Route path='/' element={<Profile />} />
           <Route path='/profile' element={<Profile />}/>
-          <Route path='/message' render={ () => <Message 
-            dialogs={props.state.dialogsDate}/>}/>
+          <Route path='/message' element={<Message dialogsDate={props.dialogsDate}/>}/>
           <Route path='/news' element={<News />} />
           <Route path='/settings' element={<Settings />} />
 

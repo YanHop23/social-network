@@ -2,8 +2,6 @@ import React from "react";
 import k from "./dialogs.module.css";
 import {NavLink} from "react-router-dom";
 
-
-
 const DialogItem = (props) => {
     let path = "/dialog/" + props.id
     return (
@@ -15,9 +13,8 @@ const DialogItem = (props) => {
     );
 };
 
-
 const Dialogs = (props) => {
-    let DialogsElem = props.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
+    let DialogsElem = props.dialogsDate.map(dialog => <DialogItem name={dialog.name} id={dialog.id} />);
 
     return(
         <div className={k.content}>

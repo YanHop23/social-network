@@ -3,10 +3,12 @@ import Dialogs from "./dialogs/Dialogs";
 import Dialog from "./dialog/Dialog";
 import k from "./message.module.css";
 
-const Message = () => {
+
+
+const Message = (props) => {
     return(
         <div className={k.wrapper}>
-            <Dialogs />
+            <Dialogs dialogsDate={props.dialogsDate}/>
             <Dialog />
         </div>
     );
