@@ -8,8 +8,8 @@ import k from "./message.module.css";
 const Message = (props) => {
     return(
         <div className={k.wrapper}>
-            <Dialogs dialogsDate={props.dialogsDate}/>
-            <Dialog />
+            <Dialogs dialogsDate={props.dialog.dialogsDate}/>
+            <Dialog messageDate={props.dialog.messageDate} addMessage={props.addMessage}/>
         </div>
     );
 };
