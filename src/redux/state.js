@@ -11,7 +11,10 @@ let state = {
         { id: 6, name: 'ola' }
     ],
     messageDate: [
-    
+        { message: "hello" },
+        { message: "how are you" },
+        { message: "what happend" },
+        { message: "goodbye" }
     ]
 }
 

@@ -7,13 +7,16 @@
 .block {
     height: 94%;
     background-color: #693232;
-    padding: 10px;
+    padding: 10px;  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .messageBlock {
+    margin-bottom: 10px;
     padding: 4px;
-    margin: 4px 0 4px 0;
     display: flex;
-    align-items: center;
+    justify-content: center; 
     background-color: #28c442;
     border-radius: 10px;
     width: 100px;
