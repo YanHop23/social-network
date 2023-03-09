@@ -1,10 +1,9 @@
-.wrapper {
+.userinfo {
     display: grid;
     grid-template: 1fr / 30% 70%;
 }
 .photo {
-    background-color: #fff;
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     width: 200px;
@@ -12,4 +11,41 @@
 }
 .name {
     font-size: 30px;
+}
+.ava {
+    width: 200px;
+    border-radius: 10px;
+    height: 250px;
+}
+.header {
+    display: flex;  
+}
+.presence {
+    color: #007c1b;
+    position: relative;
+    display: flex;
+    margin: 0 0 0 20px;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+.presence::after {
+    left: -5px;
+    border-radius: 5px;
+    position: absolute;
+    content: '';
+    background-color: rgb(51, 253, 0);
+    width: 10px;
+    height: 10px;
+}
+.status {
+    display: flex;
+    
+}
+.posts {
+    margin: 50px 0 0 0 ;
+    display: flex; 
+    justify-content: space-around  ;     
+}
+.posts img {
+    width: 200px;
 }
