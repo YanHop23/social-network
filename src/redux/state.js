@@ -1,6 +1,6 @@
-import { rerenderEntireTree } from "../render";
-
-
+let rerenderEntireTree = () => {
+    console.log('lol');
+};
 let state = {
     dialogsDate:[
         { id: 1, name: 'oleg' },
@@ -20,8 +20,12 @@ export let addMessage = (Message) => {
         message: Message,
     };
     state.messageDate.push(newMessage);
-    rerenderEntireTree(state);
+    rerenderEntireTree(state)
 };
+
+export const subscribe = (observe) => {
+    rerenderEntireTree = observe;
+}
 
 
 export default state;

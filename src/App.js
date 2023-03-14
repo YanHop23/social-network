@@ -2,12 +2,11 @@ import Header from './components/Header/Header.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Profile from './components/content/Profile/Profile.jsx';
 import Message from './components/content/Message/Message.jsx';
-import {Route, Routes, Link} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 import k from './style/main.module.css';
 import News from './components/content/News/News.jsx';
 import Settings from './components/content/Settings/Settings.jsx';
-import { addMessage } from './redux/state.js';
 
 
 
